@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #766dff, #88f3ff);
+    background-size: cover;
+    height: 100vh;
+    line-height: 1.444;
+}
+
+.section-2, .section-4 {
+    background-color: #f6f5f5;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.wrapper h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.answer {
+    margin: .5rem 0;
+    padding-left: 1.2rem;
+}
+
+.test-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.test-info span{
+    display: block;
+    padding-right: 0.3rem;
+}
+
+.score, .next {
+    padding: 0rem .8rem;
+    background-color: #eb4d4d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.next a{
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem .8rem;
+}
+
+.submit {
+    position: relative;
+}
+
+.submit input {
+    background: linear-gradient(to right, #766dff, #88f3ff);
+    color: #fff;
+    font-size: 1rem;
+    padding: .8rem 1.5rem;
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.submit input:hover {
+    cursor: pointer;
+}
+
+.submit input:focus, .next a:focus {
+    transform: scale(102%);
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.6);
+    transition: 0.5s all;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.answer {
+    margin-top: 1rem;
+}
+
+.answer div {
+    padding: 0.2rem 0.3rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.correct-answer {
+    background-color: green !important;
+    color: #fff;
+    z-index: 1;
+}
+
+.incorrect-answer {
+    background-color: red;
+    color: #fff;
+    z-index: 1;
+}
+
+
+
+/* .ans {
+    background-color: green !important;
+    color: #fff;
+}
+
+.answer div + input:checked {
+    background-color: red;
+    color: #fff;
+} */
+
+@media screen and (max-width: 350px) {
+    html{
+        font-size: 14px !important;
+    }
+    .test-info {
+       flex-wrap: wrap !important;
+    }
+
+    .next, .score {
+        margin-right: 0.4rem;
+        margin-bottom: 0.7rem;
+    }
+}
